@@ -55,40 +55,19 @@ for (let i = 0; i < 5; i++) {
 // try - catch
 
 try {
-    const m =20
-    m=30
-    console.log(m);
-    
+  const m = 20;
+  m = 30;
+  console.log(m);
 } catch (error) {
-     console.log("error is catched  :"+ error);
-      
+  console.log("error is catched  :" + error);
 }
 
-//finding smallest value in an array
+// == and === symbols
 
-let array = [20,4,32,5,90]
-
-let smallest =array[0];
-for(let i =1;i<array.length;i++){
-   smallest= array[i]<smallest? array[i]:smallest;
-
+let num5 = 5;
+let str5 = "5";
+if (num5 == str5) {
+  console.log("both data types and values are equal");
+} else if (num5 == str5) {
+  console.log("values are equal not dt");
 }
-console.log(smallest + " is the smallest ele");
-
-
-// sorting an array
-
- array = [20,4,32,5,90]
-
-for (let i = 0; i < array.length; i++) {
-    for (let j = i+1; j < array.length; j++) {
-          if (array[i]>array[j]) {
-            temp=array[i]
-            array[i]=array[j];
-            array[j]=temp;
-          }
-        
-    }
-    
-}
-console.log(array);
