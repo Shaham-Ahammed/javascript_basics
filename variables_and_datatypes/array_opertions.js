@@ -105,3 +105,11 @@ for (let i = 0; i < array.length; i++) {
 }
 console.log(array);
 
+//! SET
+//only contains unique values
+
+let setArr = new Set()
+setArr.add(1)
+setArr.add(2)
+setArr.add(1)
+console.log(setArr);
