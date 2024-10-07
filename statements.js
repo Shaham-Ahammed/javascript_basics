@@ -52,6 +52,19 @@ for (let i = 0; i < 5; i++) {
   console.log(i);
 }
 
+//for - each
+
+let arr = [4,3,45,6,6,6]
+arr.forEach(ele=>console.log(ele));
+
+//for-of
+
+for (let element of arr) {
+  console.log(element*1000);
+  
+}
+
+
 // try - catch
 
 try {
@@ -66,8 +79,10 @@ try {
 
 let num5 = 5;
 let str5 = "5";
-if (num5 == str5) {
+if (num5 === str5) {
   console.log("both data types and values are equal");
 } else if (num5 == str5) {
   console.log("values are equal not dt");
 }
+
+

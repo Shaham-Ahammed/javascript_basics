@@ -22,6 +22,9 @@ console.log(array);
 array.splice(2,0,9,99)
 console.log(array);
 
+//checking contains
+console.log(array.includes(5));
+
 //! ITERATING OVER ARRAY ELEMENTS
 
 //for each
@@ -84,6 +87,8 @@ for (let i = 1; i < array.length; i++) {
   smallest = array[i] < smallest ? array[i] : smallest;
 }
 console.log(smallest + " is the smallest ele");
+
+
 
 // sorting an array
 
