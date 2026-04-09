@@ -26,6 +26,20 @@ function sums() {
 
 console.log(sums(4,2,2,2,2,2,2));
 
+// passing an map to a function
+
+function nam(m){
+  console.log(m.get(3))
+}
+
+let map = new Map();
+map.set(3,5)
+map.set('arr',true)
+map.set(true,['dfas',4])
+
+nam(map)
+
+
 //using a function inside a object
 
 let object ={
@@ -45,3 +59,4 @@ sumsArrow = (c, d) => c + d;
 
 let b = sumsArrow(5, 10);
 console.log(b);
+

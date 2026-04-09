@@ -16,6 +16,8 @@ recommended to use let as using var leads to changing variables unindently from 
 
 */
 
+//! We only use const and ler in modern js
+
 // const is same as in dart, it is also block based
 
 // js dont have keywords other than let,var and const to declare variables
@@ -64,6 +66,14 @@ for (let element of arr) {
   
 }
 
+// for-in gives you the index of each element in the variable used there.
+
+for (let element in arr) {
+  console.log(element);
+}
+// here it gets printed 0,1,2,3,4,5
+
+
 
 // try - catch
 
@@ -86,3 +96,6 @@ if (num5 === str5) {
 }
 
 
+// use ` (options + tab) to insert a value inside a print statement
+
+console.log(`the numbers are ${num5+a}`)

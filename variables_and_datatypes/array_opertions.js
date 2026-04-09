@@ -22,6 +22,10 @@ console.log(array);
 array.splice(2,0,9,99)
 console.log(array);
 
+// slice, used to split an array 
+array = [...array.slice(0,2),10,...array.slice(3)]
+console.log(array)
+
 //checking contains
 console.log(array.includes(5));
 
@@ -31,12 +35,19 @@ console.log(array.includes(5));
 array.forEach(ele => console.log(ele))
 
 // .map creates a new array and assign it to a variable according to the fucntion written for each ele
+// map always returns the same length array
 let doubled = array.map(num => num*2)
 console.log(doubled);
 
 //filtering elements based on the condition and assigning to new list
 let arr =[2,"2",4,5,7]
-let evens = arr.filter(num=> num%2==0)
+let evens = arr.filter(num=> num%2==0) 
+// or 
+evens = arr.filter(num =>
+  {
+  return num%2==0
+  }
+)
 console.log(evens);
 
 
@@ -105,10 +116,22 @@ for (let i = 0; i < array.length; i++) {
 }
 console.log(array);
 
+// Return a new array where:
+// Only odd numbers are included
+// Each number is multiplied by 2
+
+let numArr = [1, 2, 3, 4, 5, 6];
+let ansNumArray = arr
+  .filter(ele => ele % 2 !== 0)
+  .map(ele => ele * 2);
+
+console.log(array); // [2, 6, 10]
+
+
 //! SET
 //only contains unique values
 
-let setArr = new Set()
+let setArr = new Set([2,2,3,4])
 setArr.add(1)
 setArr.add(2)
 setArr.add(1)

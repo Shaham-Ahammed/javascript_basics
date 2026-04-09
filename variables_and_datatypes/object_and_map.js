@@ -1,4 +1,5 @@
 //! OBJECT
+// the keys in objects will be converted automatically in to strings
 
 let obj = {
   name: "shaham",
@@ -36,3 +37,21 @@ console.log(map.has(4));
 map.delete(4)
 console.log(map);
 
+// problems
+
+//Create an object (or Map) that counts how many times each item appears.
+
+let arr = ['apple', 'banana', 'apple', 'orange', 'banana', 'apple'];
+
+let fruitsMap = new Map();
+
+arr.forEach(ele=>{
+    if (fruitsMap.has(ele)) {
+
+      fruitsMap.set(ele,fruitsMap.get(ele)+1)
+    }else{
+      fruitsMap.set(ele,1)
+    }
+})
+
+console.log(fruitsMap)

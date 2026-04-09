@@ -8,7 +8,7 @@ function prinitng(v) {
 }
 
 //*RESOLVE AND REJECT
-// these are predefined by js . if we completed a promise successfully we call promise. if its having erro, we call reject
+// these are predefined by js . if we completed a promise successfully we call Resolved. if its having erro, we call reject
 
 let myPromise = new Promise(function (myResolve,myReject){
     let x=1;
